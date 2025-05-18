@@ -1,0 +1,15 @@
+image: node:latest
+
+pages:
+  stage: deploy
+  script:
+    - npm install
+    - npm run build
+    - mv index.html public/
+    - mv styles.css public/
+    - mv script.js public/
+  artifacts:
+    paths:
+      - public
+  only:
+    - main
