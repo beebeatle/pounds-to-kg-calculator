@@ -8,11 +8,18 @@
 </head>
 <body>
     <div class="container">
-        <h1>Pounds to Kilograms Converter</h1>
+        <h1>Weight Converter</h1>
         <div class="converter">
+            <h2>Pounds to Kilograms</h2>
             <input type="number" id="pounds" placeholder="Enter pounds">
-            <button onclick="convert()">Convert</button>
-            <div id="result"></div>
+            <button onclick="convertPoundsToKg()">Convert</button>
+            <div id="pounds-to-kg-result"></div>
+        </div>
+        <div class="converter">
+            <h2>Kilograms to Pounds</h2>
+            <input type="number" id="kilograms" placeholder="Enter kilograms">
+            <button onclick="convertKgToPounds()">Convert</button>
+            <div id="kg-to-pounds-result"></div>
         </div>
     </div>
     <script src="script.js"></script>
